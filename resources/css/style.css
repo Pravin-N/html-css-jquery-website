@@ -284,6 +284,19 @@ header {
     display: block;
 }
 
+/* mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* -------------------------------------------*/
 /* features */
 /* -------------------------------------------*/
@@ -626,4 +639,25 @@ footer p {
 .tumblr:hover,
 .tumblr:active {
     color: #35465d;
+}
+
+/* -------------------------------------------*/
+/* Animations */
+/* -------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-4 {
+    
+}
+
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }

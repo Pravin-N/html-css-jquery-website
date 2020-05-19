@@ -7,38 +7,39 @@ $(document).ready(function(){
         } else {
             $('nav').removeClass('sticky');
         }
-}, {
+    }, {
     offset: '90px;'
-  })
+    })
 
 
     /* Scroll on buttons */
     $('.js--scroll-to-plans').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1200);
-            });
+    });        
     
     $('.js--scroll-to-start').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 900);
-            });
+    });        
+    
 
-/* 
-var waypoints = $('#handler-first').waypoint(function(direction) {
-    notify(this.element.id + ' hit 25% from top of window') 
-  }, {
-    offset: '25%'
-  })
+    /* 
+    var waypoints = $('#handler-first').waypoint(function(direction) {
+        notify(this.element.id + ' hit 25% from top of window') 
+    }, {
+        offset: '25%'
+    })
 
-  */
+    */
 
 
     // navigation scroll //
     // Select all links with hashes
     $('a[href*="#"]')
-  // Remove links that don't actually link to anything
+     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function(event) {
-    // On-page links
+        // On-page links
         if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
         && 
@@ -67,7 +68,44 @@ var waypoints = $('#handler-first').waypoint(function(direction) {
             });
         }
         }
-    });
-  
+        });
+    
+
+        /* Animation on scroll */
+        $('.js--wp-1').waypoint(function(direction) {
+            $('.js--wp-1').addClass('animated fadeIn');
+        }, {
+            offset: '60%'
+        });
+
+        $('.js--wp-2').waypoint(function(direction) {
+            $('.js--wp-2').addClass('animated fadeInUp');
+        }, {
+            offset: '60%'
+        });
+
+        $('.js--wp-3').waypoint(function(direction) {
+            $('.js--wp-3').addClass('animated fadeIn');
+        }, {
+            offset: '60%'
+        });
+
+        $('.js--wp-4').waypoint(function(direction) {
+            $('.js--wp-4').addClass('animated pulse');
+        }, {
+            offset: '60%'
+        });
+
+        /* Mobile navigation */
+        $('.js--nav-icon').click(function (){
+            var nav = $('.js--main-nav');
+
+            nav.slideToggle(200);
+
+
+
+        })
 
 });
+
+
