@@ -182,8 +182,7 @@ input[type=submit]:active {
 }
 
 .btn-full:hover,
-.btn-full:active,
- {
+.btn-full:active {
     border: 1px solid #cf6d17;
     color: #fff;
 }
@@ -492,14 +491,15 @@ cite img {
     color: #e67e22;
 }
 
-.plan-price-meal {
-    font-size: 80%;
-}
-
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
 }
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
 
 .plan-box ul {
     list-style: none;
@@ -650,11 +650,6 @@ footer p {
 .js--wp-3 {
     opacity: 0;
 }
-
-.js--wp-4 {
-    
-}
-
 
 .js--wp-1.animated,
 .js--wp-2.animated,

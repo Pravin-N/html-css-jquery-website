@@ -101,9 +101,6 @@ $(document).ready(function(){
             var nav = $('.js--main-nav');
 
             nav.slideToggle(200);
-
-
-
         })
 
 });

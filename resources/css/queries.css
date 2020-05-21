@@ -11,7 +11,7 @@
     .plan-box ul li {font-size: 92%;}
 
 }
-/* small tablets to big tablers: from 768px to 1023px */
+/* small tablets to big tablets: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     body { font-size: 18px;}
     section {padding: 40px 0;}
